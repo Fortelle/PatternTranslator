@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29411.108
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PatternTranslator", "PatternTranslator\PatternTranslator.csproj", "{05EC2B64-CFAA-4C78-8FA1-070C3F3B8662}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{05EC2B64-CFAA-4C78-8FA1-070C3F3B8662}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{05EC2B64-CFAA-4C78-8FA1-070C3F3B8662}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{05EC2B64-CFAA-4C78-8FA1-070C3F3B8662}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{05EC2B64-CFAA-4C78-8FA1-070C3F3B8662}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C1221664-D723-4A36-90CA-2F6AE0430ABF}
+	EndGlobalSection
+EndGlobal
