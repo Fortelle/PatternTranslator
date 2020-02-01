@@ -63,5 +63,33 @@ namespace PatternTranslator
                  PatternReplaceTimes = patternMatched,
             };
         }
+
+        public TranslateTestResult[] Test(string source)
+        {
+            var output = source;
+            var list = new List<TranslateTestResult>();
+
+            foreach (var dict in Dictionaries.Where(x => x.Regex))
+            {
+                foreach (var entry in dict.Entries)
+                {
+                    var count = 0;
+                    var begin = DateTime.Now;
+
+                    output = Regex.Replace(output, entry.Key, (m) => {
+                        count++;
+                        return entry.Value;
+                        });
+                    var time = DateTime.Now - begin;
+                    list.Add(new TranslateTestResult(){
+                        Key = entry.Key,
+                        Time = time,
+                        Count = count
+                    });
+                }
+            }
+
+            return list.ToArray();
+        }
     }
 }

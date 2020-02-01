@@ -174,7 +174,7 @@ namespace PatternTranslator
                     {
                         try
                         {
-                            _ = new Regex(Key);
+                            new Regex(Key);
                         }
                         catch (ArgumentException e)
                         {

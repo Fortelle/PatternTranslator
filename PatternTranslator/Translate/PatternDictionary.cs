@@ -21,6 +21,8 @@ namespace PatternTranslator
         //public Dictionary<string, Regex> RegexKeys { get; set; }
         [JsonIgnore]
         public string Path { get; set; }
+        [JsonIgnore]
+        public string Name { get; set; }
 
         public object Clone()
         {
@@ -30,11 +32,20 @@ namespace PatternTranslator
                 Regex = Regex,
                 IgnoreCase = IgnoreCase,
                 Priority = Priority,
-                Path = Path,
 
                 Entries = Entries,
+
+                Name = Name,
+                Path = Path,
             };
             return dict;
         }
     }
+
+    public struct PatternEntry
+    {
+        public string Pattern { get; set; }
+        public string Replacement { get; set; }
+    }
+
 }
